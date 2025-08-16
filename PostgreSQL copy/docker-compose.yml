@@ -1,0 +1,15 @@
+services:
+  mssql:
+    container_name: mongodb
+    image: mongodb/mongodb-community-server:latest
+    ports:
+      - "27017:27017"
+    env_file:
+      - .env.local
+    restart: always
+    volumes:
+      - volume:/data/db
+      - config:/data/configdb
+volumes:
+  volume:
+  config:
