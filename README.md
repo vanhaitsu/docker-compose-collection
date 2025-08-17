@@ -70,7 +70,7 @@ docker-compose --env-file .env.local down -v
 - Default variables are in `.env.example`.
 - Override them by editing `.env.local` (which is ignored by Git).
 
-# Notes
+## Notes
 
 - These configs are designed for **local development only**.
 - Don’t expose them directly to the internet or production systems.
