@@ -6,7 +6,7 @@ services:
       - "5432:5432"
     env_file:
       - .env.local
-    restart: always
+    restart: no
     volumes:
       - volume:/var/lib/postgresql/data
 volumes:
