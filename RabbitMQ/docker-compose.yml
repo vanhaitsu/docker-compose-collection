@@ -1,0 +1,14 @@
+services:
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672" # Management UI
+    env_file:
+      - .env.local
+    restart: no
+    volumes:
+      - volume:/var/lib/rabbitmq
+volumes:
+  volume:
